@@ -5,6 +5,7 @@ import { FormUtils } from '../../../utils/form-utils';
 
 @Component({
     selector: 'app-basic-page',
+    standalone: true,
     imports: [JsonPipe, ReactiveFormsModule],
     templateUrl: './basic-page.component.html'
 })
