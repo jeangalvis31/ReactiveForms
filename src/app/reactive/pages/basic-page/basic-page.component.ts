@@ -4,10 +4,9 @@ import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } 
 import { FormUtils } from '../../../utils/form-utils';
 
 @Component({
-  selector: 'app-basic-page',
-  standalone: true,
-  imports: [JsonPipe, ReactiveFormsModule],
-  templateUrl: './basic-page.component.html',
+    selector: 'app-basic-page',
+    imports: [JsonPipe, ReactiveFormsModule],
+    templateUrl: './basic-page.component.html'
 })
 export class BasicPageComponent { 
 

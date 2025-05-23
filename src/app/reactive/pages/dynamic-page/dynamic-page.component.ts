@@ -3,10 +3,9 @@ import { Component, inject } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-dynamic-page',
-  standalone: true,
-  imports: [JsonPipe, ReactiveFormsModule, CommonModule],
-  templateUrl: './dynamic-page.component.html',
+    selector: 'app-dynamic-page',
+    imports: [JsonPipe, ReactiveFormsModule, CommonModule],
+    templateUrl: './dynamic-page.component.html'
 })
 export class DynamicPageComponent { 
   private fb = inject(FormBuilder)

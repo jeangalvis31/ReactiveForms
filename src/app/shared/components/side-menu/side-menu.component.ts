@@ -14,11 +14,10 @@ import { routes } from '../../../app.routes';
 
 
 @Component({
-  selector: 'app-side-menu',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: './side-menu.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-side-menu',
+    imports: [RouterLink, RouterLinkActive],
+    templateUrl: './side-menu.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SideMenuComponent {
   
