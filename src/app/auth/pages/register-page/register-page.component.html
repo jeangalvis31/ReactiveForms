@@ -12,12 +12,13 @@
                 <div class="col-sm-9">
                     <input type="text"
                            class="form-control"
-                           placeholder="Nombre del usuario"
+                           placeholder="Nombre y apellido"
                            formControlName="name">
 
                     @if (formUtils.isValidField(myForm, 'name')) {
                     <span class="form-text text-danger">
-                        {{formUtils.getFieldError(myForm, 'name')}}
+                        El campo debe tener nombre y apellido
+                        <!-- {{formUtils.getFieldError(myForm, 'name')}} -->
                     </span>
                     }
                 </div>
@@ -88,8 +89,11 @@
             }
                 </div>
             </div>
-
-
+            @if (myForm.errors && myForm.touched) {
+            <span class="text-danger">
+                Las contraseñas no coinciden
+            </span>
+            }
             <div class="row">
                 <div class="col">
                     <button class="btn btn-primary float-end"
